@@ -1,9 +1,18 @@
-import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import React from "react";
+import { render } from "@testing-library/react";
+import App from "./App";
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test("test to check that it renders without crashing", () => {
+	const component = render(<App />);
+	console.log(component);
+});
+
+test("test to check if strikes is rendered", () => {
+	const { getByText } = render(<App />);
+	getByText(/strikes/i);
+});
+
+test("test to check if balls is rendered", () => {
+	const { getByText } = render(<App />);
+	getByText(/balls/i);
 });
