@@ -16,3 +16,8 @@ test("test to check if balls is rendered", () => {
 	const { getByText } = render(<App />);
 	getByText(/balls/i);
 });
+
+test("test to check if display-component is rendered", () => {
+	const { getByTestId } = render(<App />);
+	getByTestId(/display-component/i);
+});

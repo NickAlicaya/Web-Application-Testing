@@ -33,13 +33,17 @@
 	border: 3px solid black;
 	color: white;
 	background-color: blue;
+	border-radius: 12px;
+	font-size: 40px;
 }
 .button {
 	height: 40px;
 	width: 8%;
 	border-radius: 8px;
 	margin: 5% 1%;
-	border: 1px solid white;
+	border: 1px solid black;
+	font-weight: bold;
+	font-size: 30px;
 }
 .strike {
 	background-color: red;
